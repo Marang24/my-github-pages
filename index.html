@@ -6,16 +6,16 @@
     <title>Welcome To Elegant Gifts</title>
     <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+     rel="stylesheet">
 </head>
-<body>
-    <body class="home-page">
+    <body>
     <header class="header">   
-
         <a href=""  class="logo"><img width="150" src="Grey Simple Oval Typographic Virtual Assistant Logo_20260523_140837_0000.png"></a>
         <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="About.html">About</a>
-            <a href="Order-now.html">Order Now</a>
+            <a href="order now.html">Order now</a>
             <a href="product.html">Product</a>
         </nav>
     </header>
@@ -27,7 +27,7 @@
     </div>
  
   <section class="services">
-    <div class="service">🚚 Free Shipping Over P1000</div>
+    <div class="service">🚚 Free Delivery For Order Over P1000</div>
     <div class="service">⚡ Same Day Delivery</div>
     <div class="service">🔒 100% Secure Payment</div>
   </section>
@@ -45,25 +45,29 @@
     <h2>Most Popular Gifts</h2>
     <div class="popular-grid">
       <div class="gift-card">
-        <img src="gift 8.jpg" alt="Exam Gifts">
+        <img src="gift8.jpg" alt="Exam Gifts">
         <p>Exam Gifts</p>
       </div>
       <div class="gift-card">
-        <img src="gift 9.jpg" alt="Self care gifts">
+        <img src="gift9.jpg" alt="Self care gifts">
         <p>Self Care Gifts</p>
       </div>
       <div class="gift-card">
-        <img src="gift 11.jpg" alt="Girly Gift">
+        <img src="gift11.jpg" alt="Girly Gift">
         <p>Girly Gift</p>
       </div>
       <div class="gift-card">
-        <img src="gift 12.jpg" alt="Affordable Gift">
+        <img src="gift12.jpg" alt="Affordable Gift">
         <p>Affordable Gift</p>
       </div>
     </div>
   </section>
-    <main>
-            <button>Shop Now</button>
+    <main> 
+            <button onclick="window.location.href='product.html'">Shop Now</button>
+    <div class="row"> 
+        <div class="col-md-8"> 
+        </div> 
+            </div> 
     </main>
 
     <footer>
@@ -78,6 +82,18 @@
     </div>
         <p>&copy; 2026 Elegant Gifts.All rights reserved.</p>
     </footer>
-      <script src="JS script.js"></script>
+      <script src="js/script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js">
+      </script>
+            <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const shopBtn = document.getElementById("shop-btn");
+    shopBtn.addEventListener("click", function() {
+        window.location.href = "product.html"; // redirect to product page
+    });
+});
+</script>
 </body>
 </html>

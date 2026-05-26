@@ -1,7 +1,7 @@
 :root{
     --main-color: #00c9a5;
     --nav-color: #00c9a5;
-    --bg-colo: #fff;
+    --bg-color: #fff;
     --black: #2f4858;
      --accent-pink: #ff69b4;
 }
@@ -18,7 +18,7 @@
       transition: all .5s ease-in;
 }
 html{
-    font-size: 70.5%;
+    font-size: 100%;
     overflow-x:visible;
 }
 body{
@@ -33,7 +33,8 @@ body{
   background-color:#ff69b4;
   display: flex;
   justify-content: space-around;
-  padding: 20px solid #fff;
+  padding: 20px;
+  border: 1px solid #fff;
   font-weight: 500;
 }
 
@@ -52,7 +53,7 @@ body{
   margin: 10px;
 }
 .promo {
-  background: #e91e63;
+  background: #ff69b4;
   color: #fff;
   font-weight: bold;
 }
@@ -102,7 +103,7 @@ header .navbar a{
     margin: 0 1rem;
     transition: all .5s ease-in;
 }
-logo{
+logo img{
     width: 150px;
     height: auto;
 }
@@ -123,7 +124,8 @@ section{
   padding:20rem 45rem;
   color: black; 
   font-size: medium;
-  font-style: italic bold;
+  font-style: italic;
+  font-weight: bold;
    } 
   section{
     text-decoration: dashed;
@@ -151,12 +153,6 @@ footer{
     padding: 1rem;
 }
 /* General Page Styling */
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background-color: #fff;
-    color: black;
-}
 /* Header */
 header{
     background-color: #00c9a5;
@@ -200,7 +196,7 @@ nav a:hover {
   width: 250px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: transform o.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card:hover {
@@ -252,21 +248,31 @@ nav a:hover {
 .about-section{
     padding: 30px;
     text-align: center;
-    background: none;
-    background-image: url(background.jpg); 
     background-size:cover;
     background-position: center;
-    padding: 20rem 45rem
+    padding: 0;
+}
+.about-page{
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: black;
+}
+.about-section p{
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: black;
 }
 
-.about-image{
-    max-width:max-content;
-    width:100%;
-    max-height: fit-content;
-    height: 100%;
-    border: 3px solid #ff69b4;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+.about-image {
+  max-width: 400px;
+  width: 100%;
+  border: 3px solid #ff69b4;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 /* Main Content */
 main {

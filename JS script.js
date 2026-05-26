@@ -1,8 +1,3 @@
-// Show a welcome message when the page loads
-window.onload = function() {
-    alert("Welcome to our Gift Packaging Website!");
-};
-
 // Update footer year automatically
 document.addEventListener("DOMContentLoaded", function() {
     const footer = document.querySelector("footer p");
@@ -42,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // Update total
             const priceValue = parseInt(productPrice.replace("P", ""));
             total += priceValue;
-            cartTotal.textContent = `Total: P${total}`;
+            cartTotal.textContent = `Total: P{total}`;
         });
     });
 
